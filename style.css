@@ -1,0 +1,119 @@
+/* for Fonts and colors */
+
+/*Colors and fonts*/
+
+  /*define all the default rule for body*/
+body{
+  background: EFFFFA;
+  color: rgb(50,50,50);
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+
+/*more specific design*/
+
+/*group selector*/
+h1, h2, h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+  color: #4C2A85;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h2{
+  color: #6B7FD7;
+  font-size: 20px;
+  font-weight: lighter;
+  font-weight: 600;
+}
+
+a{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: #B2675E;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*hovered state of the link*/
+a:hover{
+  color: #7F0799;
+}
+
+/*Custom design with class (99% of your design)*/
+.container{
+  width:700px;
+  margin: 40px auto;
+}
+
+/*only applied when the screen is less than px*/
+
+@media (max-width: 960px) {
+    .container{
+      width: 700px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container{
+      width: 500px;
+    }
+}
+@media (max-width: 540px) {
+    .container{
+      width: 300px;
+    }
+}
+
+.card-white{
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.btn-blue{
+  background-color: #B2675E;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: #6B72E1;
+  color: white;
+}
+
+.list-inline{
+  list-style: none;
+  padding-left: 10px;
+}
+
+.list-inline li{
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i{
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+
+.list-inline i:hover{
+  color: #6B72E1;
+}
+
+/*design adjustments using id (1% design remaining)*/
+#introduction p{
+  margin-bottom: 40px
+}
